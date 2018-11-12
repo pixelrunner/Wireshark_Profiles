@@ -1,0 +1,28 @@
+#This file is meant to enumerate some of the different changes that can be made manually in the preferences file. Remember the preferences file is overwritten everytime that a change is made.
+
+#This chooses which layout is being used. There are 6 choices.
+# Layout type (1-6)
+# A decimal number
+#gui.layout_type: 1
+
+# Layout content of the pane 1
+# One of: NONE, PLIST, PDETAILS, PBYTES
+# (case-insensitive).
+gui.layout_content_1: PLIST
+
+# Ask to save unsaved capture files?
+# TRUE or FALSE (case-insensitive)
+gui.ask_unsaved: FALSE
+
+#Interfaces are for Mac (not sure of windows) allows you to easily nickname interfaces.
+# Interface descriptions (Ex: eth0(eth0 descr),eth1(eth1 descr),...)
+# A string
+#capture.devices_descr: en0(Wireless),en7(Wired)
+
+# Hide the given interface types in the startup list
+# A string
+#8 is external capture interfaces.
+#5 is wireless capture interfaces
+#0 is wired capture interfaces
+#comma serperate the value to hide certain interfaces. It's possible this is unique to machine.
+gui.interfaces_hidden_types: 8
